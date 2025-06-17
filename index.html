@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mural Fotográfico - Valentine's Day</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+        }
+        h1 {
+            text-align: center;
+            font-size: 2rem;
+            margin: 20px 10px;
+            line-height: 1.3;
+        }
+
+        /* Style for the credits h1 at the bottom */
+        .credits {
+            font-size: 1.2rem;
+            margin: 15px 10px;
+        }
+
+        @media (max-width: 767px) {
+            h1 {
+                font-size: 1.5rem;
+                margin: 15px 10px;
+            }
+
+            .credits {
+                font-size: 1rem;
+            }
+        }
+
+        .photo-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        @media (max-width: 767px) {
+            .photo-gallery {
+                gap: 10px;
+                margin: 10px;
+            }
+        }
+
+        .photo-gallery img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            object-fit: cover;
+            transition: transform 0.3s ease;
+            aspect-ratio: 4/3;
+            border-radius: 4px;
+        }
+
+        @supports not (aspect-ratio: 4/3) {
+            .photo-gallery img {
+                height: 225px;
+            }
+
+            @media (min-width: 768px) {
+                .photo-gallery img {
+                    height: 262px;
+                }
+            }
+
+            @media (min-width: 1200px) {
+                .photo-gallery img {
+                    height: 300px;
+                }
+            }
+        }
+
+        @media (min-width: 768px) {
+            .photo-gallery img {
+                width: calc(33.333% - 20px);
+                max-width: 350px;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .photo-gallery img {
+                width: calc(25% - 20px);
+                max-width: 400px;
+            }
+        }
+
+        .photo-gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<h1>These are some photos of the most beloved teachers and students of the 2<sup>nd</sup> TDS!</h1>
+<div class="photo-gallery">
+    <img src="imagens/20250617_095903-min.jpg" alt="Foto 1">
+    <img src="imagens/20250617_100313-min.jpg" alt="Foto 2">
+    <img src="imagens/20250617_101115-min.jpg" alt="Foto 3">
+    <img src="imagens/20250617_103410-min.jpg" alt="Foto 4">
+    <img src="imagens/20250617_103641-min.jpg" alt="Foto 5">
+    <img src="imagens/20250617_103738-min.jpg" alt="Foto 6">
+    <img src="imagens/20250617_103833-min.jpg" alt="Foto 7">
+    <img src="imagens/20250617_103840-min.jpg" alt="Foto 8">
+    <img src="imagens/20250617_122746-min.jpg" alt="Foto 9">
+    <img src="imagens/20250617_122825-min.jpg" alt="Foto 10">
+    <img src="imagens/imagem_mariayasmin-min.jpeg" alt="Foto 11">
+</div>
+
+<h1 class="credits" style="margin-top: 20px;">
+    SITE FEITO POR:<br>
+    Cauã Gustavo de Freitas Cruvinel<br>
+    Davi Freitas de Jesus<br><br>
+    FOTOS CAPTURADAS POR:<br>
+    Vitor Hugo Nogueira Freire Cupertino
+</h1>
+<style>
+    h1{
+        font-family: 'Roboto', sans-serif;
+    }
+</style>
+</body>
+</html>
